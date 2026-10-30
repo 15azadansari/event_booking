@@ -1,7 +1,9 @@
 import axios from 'axios';
 
 const api = axios.create({
-    baseURL: 'http://localhost:5000/api',
+    
+    // baseURL: 'http://localhost:5000/api', // for locally work 
+     baseURL: 'https://event-booking-backend-ys13.onrender.com',  // ye live project show krne ke liye hai. render ka live link hai
 });
 
 api.interceptors.request.use((config) => {
